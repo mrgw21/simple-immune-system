@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immune System Game</title>
+    <!-- Link to the p5.js library for canvas and graphics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        /* Center the canvas and elements */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Immune System Game</h1>
+    <p>Control the T-cell (purple cell) with the arrow keys to attack pathogens!</p>
+
+    <!-- Main game script files -->
+    <script src="src/player.js"></script>      <!-- T-Cell class -->
+    <script src="src/pathogen.js"></script>    <!-- Pathogen class (bacteria and virus) -->
+    <script src="src/wbcell.js"></script>      <!-- White Blood Cell class -->
+    <script src="src/main.js"></script>        <!-- Main game logic -->
+
+</body>
+</html>
